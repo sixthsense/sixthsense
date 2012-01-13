@@ -1,0 +1,64 @@
+<html>
+   <head>
+      <title></title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <script src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=5"></script>
+      <script>
+      var map = null;
+
+    function SetZoomLevel(zLev)
+    {
+         map.SetZoomLevel(zLev);
+    }
+
+    function myClickHandler(e)
+    {
+        var x = e.mapX;
+        var y = e.mapY;
+        var pixel = new VEPixel(x, y);
+        var LL = map.PixelToLatLong(pixel);
+        if(e.leftMouseButton)
+            var events = "snParameter: CLICKEVENT LEFT, " + LL;
+        if(e.rightMouseButton)
+           var events = "snParameter: CLICKEVENT RIGHT, " + LL;
+        window.navigate(events);
+    }
+
+    function myMouseMoveHandler(e)
+    {
+        var x = e.mapX;
+        var y = e.mapY;
+        var pixel = new VEPixel(x, y);
+        var LL = map.PixelToLatLong(pixel);
+        var events = "snParameter: MOVEEVENT MOUSE, " + LL;
+        window.navigate(events);
+    }
+
+    function AddPin(pinID, posit, descr, iconAddress)
+    {   
+        var pin = new VEPushpin(
+        pinID, 
+        posit, 
+        iconAddress, 
+        descr, 
+        ''
+        );
+       pin.ShowDetailOnMouseOver=false;
+       map.AddPushpin(pin);
+    }
+
+      function GetMap()
+      {
+         map = new VEMap('myMap');
+         map.LoadMap(new VELatLong( 45.850816,9.3956833), 10 ,'h' , false);
+         map.SetZoomLevel(12);
+         map.SetMapStyle("r");
+         map.AttachEvent('onclick', myClickHandler); 
+         map.AttachEvent('onmousemove', myMouseMoveHandler);
+      }   
+      </script>
+   </head>
+   <body onload="GetMap();">
+      <div id='myMap' style="position:relative; width:1024px; height:768px;"></div>
+   </body>
+</html>
