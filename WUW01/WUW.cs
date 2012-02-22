@@ -2853,7 +2853,7 @@ namespace WUW01
             {
                 StopOtherApps(this, e);
                 //elementHostClock.Child = Control_clock;
-                elementHostClock.Child = Control_ink;
+                elementHostClock.Child = Control_clock;
                 clockDemo = true;
                 labelDemoName.Text = "Clock";
                 buttonClockDemo.Text = "Stop Clock";
