@@ -6,7 +6,7 @@ namespace WUW01
 	public struct SizeR
 	{
 		public static readonly SizeR Empty;
-        private double _cx;
+        	private double _cx;
 		private double _cy;
 
 		public SizeR(double cx, double cy)
@@ -26,7 +26,7 @@ namespace WUW01
 		{
 			get
 			{
-                return _cx;
+                		return _cx;
 			}
 			set
 			{
@@ -38,7 +38,7 @@ namespace WUW01
 		{
 			get
 			{
-                return _cy;
+                		return _cy;
 			}
 			set
 			{
