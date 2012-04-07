@@ -15,33 +15,34 @@ namespace WUW01
         #region Lengths and Rects
 
         public static RectangleR FindBox(ArrayList points)
+	{
+		double minX = double.MaxValue;
+		double maxX = double.MinValue;
+		double minY = double.MaxValue;
+		double maxY = double.MinValue;
+		
+		foreach (PointR p in points)
 		{
-			double minX = double.MaxValue;
-			double maxX = double.MinValue;
-			double minY = double.MaxValue;
-			double maxY = double.MinValue;
+			if (p.X < minX)
+				minX = p.X;
+			if (p.X > maxX)
+				maxX = p.X;
+				
+			if (p.Y < minY)
+				minY = p.Y;
 		
-			foreach (PointR p in points)
-			{
-				if (p.X < minX)
-					minX = p.X;
-				if (p.X > maxX)
-					maxX = p.X;
-			
-				if (p.Y < minY)
-					minY = p.Y;
-				if (p.Y > maxY)
-					maxY = p.Y;
-			}
-		
-			return new RectangleR(minX, minY, maxX - minX, maxY - minY);
+			if (p.Y > maxY)
+				maxY = p.Y;
 		}
+		
+		return new RectangleR(minX, minY, maxX - minX, maxY - minY);
+	}
 
-		public static double Distance(PointR p1, PointR p2)
-		{
-			double dx = p2.X - p1.X;
-			double dy = p2.Y - p1.Y;
-			return Math.Sqrt(dx * dx + dy * dy);
+	public static double Distance(PointR p1, PointR p2)
+	{
+		double dx = p2.X - p1.X;
+		double dy = p2.Y - p1.Y;
+		return Math.Sqrt(dx * dx + dy * dy);
         }
 
         // compute the centroid of the points given
@@ -86,8 +87,8 @@ namespace WUW01
         // by the circle centered on the start point with a radius to the end point, 
         // where 0 radians is straight right from start (+x-axis) and PI/2 radians is
         // straight down (+y-axis).
-		public static double AngleInRadians(PointR start, PointR end, bool positiveOnly)
-		{
+	public static double AngleInRadians(PointR start, PointR end, bool positiveOnly)
+	{
             double radians = 0.0;
             if (start.X != end.X)
             {
@@ -105,15 +106,15 @@ namespace WUW01
                 radians += Math.PI * 2.0;
             }
             return radians;
-		}
+	}
 
         public static double Rad2Deg(double rad)
-		{
-			return (rad * 180d / Math.PI);
-		}
+	{
+		return (rad * 180d / Math.PI);
+	}
 
-		public static double Deg2Rad(double deg)
-		{
+	public static double Deg2Rad(double deg)
+	{
 			return (deg * Math.PI / 180d);
         }
 
