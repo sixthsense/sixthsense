@@ -8,6 +8,25 @@ For more information on SixthSense software and hardware, see:
 
 Detailed documentation is in progress.
 
+64-bit users!
+-------------
+
+There are currently some problems plaguing 64 bit systems that we're trying to fix. 
+Until then, follow these steps to debug the code under 64-bit systems (in Visual Studio):
+
+From top menu select "Build", then "Configuration Manager".
+After adding a new "x86" platform inherited from debug platform, we see a
+new platform in the list and the old one is removed. 
+
+From the new platform displayed we click on Platform column to see a dropdown
+containing 3 options "or more", the first is "Any CPU", the second is
+<New...>, and the third is <Edit...>, select <New...>, a window will
+open to choose the platform.
+
+Select x86 then hit OK.
+
+Click debug, it runs as it should.
+
 Mailing List
 ------------
 
