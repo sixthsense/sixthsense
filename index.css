@@ -1,0 +1,87 @@
+body {
+	background-color:  #eee;
+}
+
+#header {
+	font-size:  48pt;
+	margin-top:  20px;
+	
+	font-family:  "Open Sans";
+	text-align:  center;
+	
+	font-weight:  300;
+	
+	text-decoration:  underline;
+}
+
+#content {
+	text-align: center;
+}
+#content h2 {
+	margin-top:  35px;
+	font-family:  serif;
+	font-weight:  400;
+	font-style:  italic;
+	color:  #666;
+}
+
+#video_col {
+	margin:  auto;
+	margin-top:  55px;
+	width:  960px;
+	position:  relative;
+	height:  350px;
+}
+
+#video {
+	position:  absolute;
+	left:  0px;
+}
+
+#video iframe {
+	box-shadow: 0 0 15px 0;
+}
+
+#description {
+	text-align:  left;
+	padding-right:  20px;
+	width:  290px;
+	
+	position:  absolute;
+	right:  0px;
+	
+	background-color: #ddd;
+	
+	opacity:  0.8;
+	
+	border-radius:  10px;
+	padding:  15px;
+	height:  285px;
+	/* border:  2px solid #bbb; */
+	box-shadow:  0 0 6px 0 #bbb inset;
+	font: 13pt "Open Sans";
+}
+
+#opensource {
+	margin-top:  20px;
+	position:  relative;
+	font-family:  "Open Sans";
+	font-size: 15pt;
+}
+
+#opensource button {
+	box-shadow:  0 0 5px 0 #2f2f2f;
+	margin-top:  10px;
+	border:  none;
+	border-radius:  15px;
+	
+	background-color:  #333;
+	color:  #eee;
+	font-family:  "Open Sans";
+	font-size:  13pt;
+	padding:  9px;
+}
+
+#opensource button:hover {
+	box-shadow:  0 0 5px 0 transparent;
+}
