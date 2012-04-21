@@ -4,6 +4,7 @@ README
 For more information on SixthSense software and hardware, see:
 
  <http://code.google.com/p/sixthsense/wiki/Software>
+
  <http://code.google.com/p/sixthsense/wiki/Hardware>
 
 Detailed documentation is in progress.
