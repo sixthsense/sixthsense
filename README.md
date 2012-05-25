@@ -42,6 +42,8 @@ This is where most of the discussion goes on.
 
 <http://groups.google.com/group/ss_dev>
 
+**Please read the rest of this README before asking a question on the mailing list**
+
 Technology
 -----------
 
@@ -64,7 +66,7 @@ Ports
 
 The current code only runs on Windows, under the CLR virtual machine (i.e. C#).
 
-Mono (Linux, Mac OS X, etc.) - Poincare101 and Arup - https://github.com/Poincare/sixthsense (see mono branch)
+Java (Linux, Mac OS X, Android, etc.) - Dhaivat - https://github.com/Poincare/sixthsense (see java branch)
 
 If you're working on a porting SixthSense to a different environment
 (*nix, Mac OS X, Android, etc.) please list it here, with some kind of link to
