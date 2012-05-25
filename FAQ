@@ -4,27 +4,34 @@
 
 A: Because you need to read it.
 
+
 2. Why doesn't SixthSense work on Android/Linux/Mac/etc.? Can't we fix it?
 
 A: Its written in Microsoft C# without compatibility for Mono. There's some work on ports already going on, look at the README for details.
+
 
 3. How do I build a SixthSense device?
 
 A: Check out [the documentation](https://github.com/sixthsense/sixthsense/wiki/Tutorials) on this topic.  
 
+
 4. What's the primary method of contact?
 
 A: Mailing list. See the README for details.
+
 
 5. Can I contribute? How?
 
 A: **We would love for you to contribute!** You can help by just *watching* the project. Blog about SixthSense, write documentation or build a device and post a tutorial! If you're into writing code, check out the README for some specific pointers (hint: indentation is a major issue).
 
+
 6. I tried compiling, but, it tells me I don't have a Microsoft Offie API!
 
 A: You need Microsoft Office installed in order to run SixthSense.
 
+
 7. You didn't answer my question! 
 
 A: Sorry! Try asking on the mailing list (see README for details). 
+
 
