@@ -1,0 +1,102 @@
+body {
+	margin:  0;
+	padding:  0;
+	border:  none;
+	
+	background:  url("images/backtexture.png");
+	border-top:  4px solid #00327d;
+}
+
+#header {
+	font-size:  48pt;
+	margin-top:  20px;
+	
+	font-family:  "Open Sans";
+	text-align:  center;
+	
+	font-weight:  300;
+	text-shadow: 1px 1px 1px #666;
+}
+
+#content {
+	text-align: center;
+}
+#content h2 {
+	margin-top:  35px;
+	font-family:  serif;
+	font-weight:  400;
+	font-style:  italic;
+	color:  #666;
+}
+
+#video_col {
+	margin:  auto;
+	margin-top:  55px;
+	width:  960px;
+	position:  relative;
+	height:  350px;
+}
+
+#video {
+	position:  absolute;
+	left:  0px;
+}
+
+#video iframe {
+	box-shadow: 0 0 15px 0px #2f2f2f;
+}
+
+#description {
+	text-align:  left;
+	padding-right:  20px;
+	width:  290px;
+	
+	position:  absolute;
+	right:  0px;
+	
+	background: url("images/deeptexture.png");
+	
+	color:  #444;
+	
+	border-radius:  10px;
+	padding:  15px;
+	height:  285px;
+	/* border:  2px solid #bbb; */
+	box-shadow:  0 0 6px 0 #bbb inset;
+	font: 13pt "Open Sans";
+}
+
+#description a {
+	color:  #000;
+	font-size:  14pt;
+}
+
+#opensource {
+	margin-top:  20px;
+	position:  relative;
+	font-family:  "Open Sans";
+	font-size: 16pt;
+}
+
+#github {
+	margin-right:  3px;
+	text-decoration:  none;
+	box-shadow:  0 0 5px 0 #2f2f2f;
+	margin-top:  10px;
+	border:  none;
+	border-radius:  15px;
+	
+	background: url("images/greentexture.png");
+	color:  #eee;
+	font-family:  "Open Sans";
+	font-size:  13pt;
+	padding:  9px;
+}
+
+#github:hover {
+	box-shadow:  0 0 5px 0 transparent;
+}
+
+#github:active {
+	box-shadow: 0 0 9px 0 #2f2f2f inset;
+}
