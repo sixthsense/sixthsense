@@ -1,7 +1,7 @@
 function animations() {
 	$("#header").show("slow", function() {
 		$("#subtitle").show("slow", function() {
-			$("#video_col").show("fast");
+			$("#video_col").fadeIn("fast");
 			$("#opensource").fadeIn("slow");
 		});
 	});
@@ -16,4 +16,4 @@ function init() {
 	setTimeout("animations()", 200);
 }
 
-//$(document).ready(init);
+$(document).ready(init);
