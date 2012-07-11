@@ -61,6 +61,12 @@ Standards
 We use tabs-as-spaces, with 4 spaces for identation. There's all kinds of
 identation issues, and we encourage people to fix those.
 
+
+Android
+-------
+
+We're working on an Android port, but, it is nowhere near complete. We'll have more details ready once we've developed some of the UI.
+
 Ports
 -----
 
