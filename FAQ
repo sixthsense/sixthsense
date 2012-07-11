@@ -27,7 +27,7 @@ A: **We would love for you to contribute!** You can help by just *watching* the 
 
 6. I tried compiling, but, it tells me I don't have a Microsoft Offie API!
 
-A: You need Microsoft Office installed in order to run SixthSense.
+A: You need Microsoft Office installed in order to run SixthSense. It is kind of irritating; we're working on getting rid of the dependency.
 
 
 7. You didn't answer my question! 
