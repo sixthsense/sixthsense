@@ -13,34 +13,34 @@ namespace WUW01
 		public Gesture()
 		{
 			this.Name = String.Empty;
-            this.RawPoints = null;
-            this.Points = null;
+            		this.RawPoints = null;
+            		this.Points = null;
 		}
 
-        // when a new prototype is made, its raw points are resampled into n equidistantly spaced
-        // points, then it is scaled to a preset size and translated to a preset origin. this is
-        // the same treatment applied to each candidate stroke, and it allows us to thereafter
-        // simply step through each point in each stroke and compare those points' distances.
-        // in other words, it removes the challenge of determining corresponding points in each gesture.
-        // after resampling, scaling, and translating, we compute the "indicative angle" of the 
-        // stroke as defined by the angle between its centroid point and first point.
+	        // when a new prototype is made, its raw points are resampled into n equidistantly spaced
+	        // points, then it is scaled to a preset size and translated to a preset origin. this is
+	        // the same treatment applied to each candidate stroke, and it allows us to thereafter
+	        // simply step through each point in each stroke and compare those points' distances.
+	        // in other words, it removes the challenge of determining corresponding points in each gesture.
+	        // after resampling, scaling, and translating, we compute the "indicative angle" of the 
+	        // stroke as defined by the angle between its centroid point and first point.
 		public Gesture(string name, ArrayList points)
 		{
 			this.Name = name;
-            this.RawPoints = new ArrayList(points); // copy (saved for drawing)
+            		this.RawPoints = new ArrayList(points); // copy (saved for drawing)
 
-            // resample first (influences calculation of centroid)
-            Points = Utils.Resample(points, GeometricRecognizer.NumResamplePoints);
+            		// resample first (influences calculation of centroid)
+            		Points = Utils.Resample(points, GeometricRecognizer.NumResamplePoints);
 
-            // rotate so that the centroid-to-1st-point is at zero degrees
-            double radians = Utils.AngleInRadians(Utils.Centroid(Points), (PointR) Points[0], false);
-            Points = Utils.RotateByRadians(Points, -radians); // undo angle
+           		// rotate so that the centroid-to-1st-point is at zero degrees
+            		double radians = Utils.AngleInRadians(Utils.Centroid(Points), (PointR) Points[0], false);
+            		Points = Utils.RotateByRadians(Points, -radians); // undo angle
             
-            // scale to a common (square) dimension
-            Points = Utils.ScaleTo(Points, GeometricRecognizer.ResampleScale);
+            		// scale to a common (square) dimension
+            		Points = Utils.ScaleTo(Points, GeometricRecognizer.ResampleScale);
 
-            // finally, translate to a common origin
-            Points = Utils.TranslateCentroidTo(Points, GeometricRecognizer.ResampleOrigin);
+            		// finally, translate to a common origin
+            		Points = Utils.TranslateCentroidTo(Points, GeometricRecognizer.ResampleOrigin);
 		}
 
         public int Duration
@@ -68,7 +68,10 @@ namespace WUW01
                 Gesture g = (Gesture) obj;
                 return Name.CompareTo(g.Name);
             }
-            else throw new ArgumentException("object is not a Gesture");
+            else 
+            {
+            	throw new ArgumentException("object is not a Gesture");
+            }
         }
 
         /// <summary>
