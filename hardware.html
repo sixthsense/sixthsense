@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<link href="index.css" rel="stylesheet"></link>
+		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script src="index.js"></script>
+	</head>
+	<body>
+
+<a href="./index.html" rel="nofollow">SixthSense HomePage</a>
+<li><a href="./hardware.html" rel="nofollow">Hardware</a>     
+<a href="http://code.google.com/p/sixthsense/wiki/Hardware" rel="nofollow"> Code.google.wiki</a> </li>
+
+<li><a href="./software.html" rel="nofollow">Software</a>     
+<a href="http://code.google.com/p/sixthsense/wiki/Software" rel="nofollow"> Code.google.wiki</a> </li>
+
+
+<li><a href="./links.html" rel="nofollow">Links</a>     
+<a href="http://code.google.com/p/sixthsense/wiki/Links" rel="nofollow"> Code.google.wiki</a> </li>
+
+
+<li><a href="./tutorial.html" rel="nofollow">Tutorial</a>     
+<a href="http://code.google.com/p/sixthsense/wiki/Tutorial" rel="nofollow"> Code.google.wiki</a> </li>
+
+<li><a href="./licensing.html" rel="nofollow">Licensing</a>     
+<a href="http://code.google.com/p/sixthsense/wiki/Software" rel="nofollow"> Code.google.wiki</a> </li>
+
+<li><a href="./Contribute.html" rel="nofollow">Contribute</a>     
+<a href="http://code.google.com/p/sixthsense/wiki/Contribute" rel="nofollow"> Code.google.wiki</a> </li>
+
+		 <div id="header">SixthSense </div>
+
+		<div id="content">
+			<div id="subtitle">
+				<h2>Create your own SixthSense Device</h2>
+			</div>
+
+
+
+
+
+<p>So you want to make your own SixthSense Device. Now what? </p><h2><a name="Components"></a>Components<a href="#Components" class="section_anchor"></a></h2><h3><a name="Camera"></a>Camera<a href="#Camera" class="section_anchor"></a></h3><p>The camera is the key input device of the SixthSense system. The camera acts as a digital eye of the system. It basically captures the scene the user is looking at. The video stream captured by the camera is passed to mobile computing device which does the appropriate computer vision computation.  The major functions of the camera can be listed as: </p><ul><li>Captures user’s hand movements and gestures (used in reorganization of user gestures) </li><li>Captures the scene in front and objects the user is interacting with (used in object reorganization and tracking) </li><li>Takes a photo of the scene in front when the user performs a ‘framing’ gesture   </li><li>Captures the scene of projected interface (used to correct the alignment, placement and look and feel of the projected interface components) </li></ul><p></p><p>Suggested Product: <a href="http://www.amazon.com/Logitech-Quickcam-for-Notebooks-Pro/dp/B000BBYH8O/ref=sr_1_3?ie=UTF8&amp;qid=1299271109&amp;sr=8-3" rel="nofollow">Logitech QuickCam Pro for notebooks</a>   </p><h3><a name="Projector"></a>Projector<a href="#Projector" class="section_anchor"></a></h3><p>The projector is the key output device of the SixthSense system. The projector visually augments surfaces, walls and physical objects the user is interacting with by projecting digital information and graphical user interfaces. The mobile computing device provides the projector with the content to be projected. The projector unit used in prototype runs on a rechargeable battery.  The major functions of the projector can be listed as: </p><ul><li>Projects graphical user interface of the selected application onto surfaces or walls in front </li><li>Augments the physical objects the user interacting with by projecting just-in-time and related information from the Internet </li></ul><p></p><p>Suggested Products: You can buy either <strong>laser</strong> (<a href="http://www.amazon.com/AAXA-Technologies-P1Jr-Hand-held-Projector/dp/B0042TUOTC/ref=sr_1_5?ie=UTF8&amp;s=electronics&amp;qid=1299270933&amp;sr=8-5" rel="nofollow">AAXA</a>, <a href="http://www.amazon.com/MicroVision-SHOWWX-Classic-Laser-Projector/dp/B003G5ML9Y/ref=sr_1_2?ie=UTF8&amp;s=electronics&amp;qid=1299271049&amp;sr=8-2" rel="nofollow">Microvision</a>) or <strong>L.E.D</strong> (<a href="http://www.amazon.com/3M-MPRO150-Pocket-Projector-MPro150/dp/B0031ESJ78/ref=sr_1_2?ie=UTF8&amp;s=electronics&amp;qid=1299270933&amp;sr=8-2" rel="nofollow">3M MPro110</a>) projectors. </p><h3><a name="Mirror"></a>Mirror<a href="#Mirror" class="section_anchor"></a></h3><p>The mirror reflects the projection coming out from the projector and thus helps in projecting onto the desired locations on walls or surfaces. The user manually can change the tilt of the mirror to change the location of the projection. For example in application where the user wants the projection to go on the ground instead of the surface in front, he can change the tilt of the mirror to change the projection. Thus, the mirror in the SixthSense helps in overcoming the limitation of the limited projection space of the projector.  </p><p>Suggested Product: Any 1”X1” first surface mirror </p><h3><a name="Microphone"></a>Microphone<a href="#Microphone" class="section_anchor"></a></h3><p>The microphone is an optional component of the SixthSense. It is required when using a paper as a computing interface. When the user wants to use a sheet of paper as an interactive surface, he or she clips the microphone to the paper. The microphone attached this way captures the sound signals of user’s touching the paper. This data is passed to computing device for processing. Later, combined with the tracking information about user’s finger, the system is able to identify precise touch events on the paper. Here, the sound signal captured by the microphone provides time information whereas the camera performs tracking. The applications enabled by this technique are explained earlier.    </p><p>Suggested Product: <a href="http://www.amazon.com/Logitech-Quickcam-for-Notebooks-Pro/dp/B000BBYH8O/ref=sr_1_3?ie=UTF8&amp;qid=1299271109&amp;sr=8-3" rel="nofollow">Microphone of Logitech QuickCam pro for notebooks</a> </p><h3><a name="Mobile_computing_device"></a>Mobile computing device<a href="#Mobile_computing_device" class="section_anchor"></a></h3><p>The SixthSense system uses a mobile computing device in user’s pocket as the processing device. The software program enabling all the features of the system runs on this computing device. This device can be a mobile phone or a small laptop computer. The camera, the projector and the microphone are connected to this device using wired or wireless connection. The detail of the software program that runs on this device is provided in next section. The mobile computing device is also connected to the Internet via 3G network or wireless connection.  </p><p>Suggested Product: Any Windows computer </p><p>For a more detailed list of resources, along with prices check <a href="http://code.google.com/p/sixthsense/wiki/Links" rel="nofollow">Links / Resources</a> </p><p><img src="http://www.pranavmistry.com/projects/sixthsense/diy/diagram_device01.jpg"> </p><p>Now that you have all these pieces, you need a way to combine them. We recommend using Lego strips to form the base. The projector, camera, and mirror assembly can be directly put onto this base. You can also use Velcro to combine the products.
+ 				
+				
+		</div>
+		<div id="footer"></div>
+	</body>
+</html>
