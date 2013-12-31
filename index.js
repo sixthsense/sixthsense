@@ -16,4 +16,4 @@ function init() {
 	setTimeout("animations()", 200);
 }
 
-$(document).ready(init);
+//$(document).ready(init);

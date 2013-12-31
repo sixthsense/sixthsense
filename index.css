@@ -1,102 +1,53 @@
 body {
-	margin:  0;
-	padding:  0;
-	border:  none;
-	
-	background:  url("images/backtexture.png");
-	border-top:  4px solid #00327d;
+	background-color: #eee;
 }
 
-#header {
-	font-size:  48pt;
-	margin-top:  20px;
-	
-	font-family:  "Open Sans";
-	text-align:  center;
-	
-	font-weight:  300;
-	text-shadow: 1px 1px 1px #000 inset;
+.name h1 a {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-weight: bold;
 }
 
-#content {
-	text-align: center;
-}
-#content h2 {
-	margin-top:  35px;
-	font-family:  serif;
-	font-weight:  400;
-	font-style:  italic;
-	color:  #666;
+.title-area {
+		font-size: 18pt;
 }
 
-#video_col {
-	margin:  auto;
-	margin-top:  55px;
-	width:  960px;
-	position:  relative;
-	height:  350px;
+.centered {
+		text-align: center;
 }
 
-#video {
-	position:  absolute;
-	left:  0px;
+#main_heading_wrapper {
+		padding-top: 50px;
+		padding-bottom: 100px;
+		background-color: #34495e;
 }
 
-#video iframe {
-	box-shadow: 0 0 15px 0px #2f2f2f;
+
+#main_heading h1 {
+		color: #fff;
+		font-weight: bold
+}
+
+#main_heading h3 {
+		color: #eee;
 }
 
 #description {
-	text-align:  left;
-	padding-right:  20px;
-	width:  290px;
-	
-	position:  absolute;
-	right:  0px;
-	
-	background: url("images/deeptexture.png");
-	
-	color:  #444;
-	
-	border-radius:  10px;
-	padding:  15px;
-	height:  285px;
-	/* border:  2px solid #bbb; */
-	box-shadow:  0 0 6px 0 #bbb inset;
-	font: 13pt "Open Sans";
+	font-size: 14pt;
+	line-height: 1.4em;
+	color: #333;
 }
 
-#description a {
-	color:  #000;
-	font-size:  14pt;
-}
-
-#opensource {
-	margin-top:  20px;
-	position:  relative;
-	font-family:  "Open Sans";
-	font-size: 16pt;
-}
-
-#github {
-	margin-right:  3px;
-	text-decoration:  none;
-	box-shadow:  0 0 5px 0 #2f2f2f;
-	margin-top:  10px;
-	border:  none;
-	border-radius:  15px;
+#what_is {
+	padding-top: 35px;
 	
-	background: url("images/greentexture.png");
-	color:  #eee;
-	font-family:  "Open Sans";
-	font-size:  13pt;
-	padding:  9px;
 }
 
-#github:hover {
-	box-shadow:  0 0 5px 0 transparent;
+#description_row {
+	padding-top: 35px;
 }
 
-#github:active {
-	box-shadow: 0 0 9px 0 #2f2f2f inset;
+#description_wrapper {
+	background-color: #eee;
+	margin-top: 0px;
 }
+

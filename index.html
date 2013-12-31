@@ -1,36 +1,55 @@
 <html>
 	<head>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-		<link href="index.css" rel="stylesheet"></link>
-		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-		<script src="index.js"></script>
+		<link rel="stylesheet" href="css/foundation.css" />
+		<link rel="stylesheet" href="index.css" />
+    <script src="js/modernizr.js"></script>
 	</head>
+
 	<body>
-		<div id="header">SixthSense</div>
+		<nav class="top-bar" data-topbar>
+			<ul class="title-area">
+				<li class="name">
+					<h1><a href="#">SixthSense</a></h1>
+				</li>
+				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			</ul>
+
+			<section class="top-bar-section">
+				<!-- Right Nav Section -->
+				<ul class="right">
+					<li class="inactive"><a href="contributors.html">Contributors</a></li>
+					<li class="active"><a href="#">About</a></li>
+				</ul>
+
+			</section>
+		</nav>
+
 		<div id="content">
-			<div id="subtitle">
-				<h2>A software interface to the real world</h2>
-			</div>
-			
-			<div id="video_col">
-				<div id="video">
-					<iframe width="560" height="315" src="http://www.youtube.com/embed/YrtANPtnhyg" frameborder="0" allowfullscreen></iframe>
-				</div>
-				
-				<div id="description">
-					SixthSense uses a projector and camera to make amazing things happen. <br /><br />
-					
-					The code is written in C# with .NET, and currently does not run on Mono. <br /><br />
-					However, there are several ports in progress to Android, iOS, Linux and more. </br><br />
-					
-					<a href="https://github.com/sixthsense/sixthsense">Join us!</a>
+			<div id="main_heading_wrapper">
+				<div class="row">
+					<div id="main_heading" class="small-6 small-centered columns centered">
+						<h1>SixthSense</h1>
+						<h3>A software interface to the real world</h3>
+					</div>
 				</div>
 			</div>
-			
-			<div id="opensource">
-				All open source on <a href="https://github.com/sixthsense/sixthsense" id="github">Github</a>
+			<div id="description_wrapper">
+				<h1 id="what_is" class="centered">What is SixthSense?</h1>
+				<div id="description_row" class="row">
+					<div id="description_vid" class="small-7 columns">
+						<iframe src="http://embed.ted.com/talks/pranav_mistry_the_thrilling_potential_of_sixthsense_technology.html" width="560" height="315" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+					</div>
+					<div id="description" class="small-5 columns centered">
+						SixthSense is an open source project that uses a projector and camera to create finger-based interaction applications (check out the 
+						video for more). <br/><br />
+						The code is written in C# with .NET, and currently does not run on Mono.
+						However, there are several ports in progress to Android, iOS, Linux and more. <br /><br />
+						
+						<a class="button" href="https://github.com/sixthsense/sixthsense">Join us!</a>
+						<a class="button [secondary success alert]" href="contributors.html">Contributors</a>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div id="footer"></div>
 	</body>
 </html>

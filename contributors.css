@@ -1,0 +1,27 @@
+.centered {
+		text-align: center;
+}
+
+#content {
+	margin-top: 35px;
+}
+
+.contributor {
+	background-color: #34495e;
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	padding: 1em;
+}
+
+.contributor h3 {
+		color: #fff;
+}
+
+#join {
+	background-color: #3498db;
+}
+
+#join a {
+	color: #fff;
+}
