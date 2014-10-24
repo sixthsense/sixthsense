@@ -1,12 +1,6 @@
 How to contribute?
 ------------------
 
-Code
-----
-
-You are here!
-
-
 Technology
 -----------
 
@@ -19,6 +13,11 @@ Issues
 To get started, there is all kinds of indentation issues in the codebase, fix
 those so you can get a feel for how all the code is laid out.
 
+Documentation
+-------------
+There is a need for more documentation, especially on how to get a SixthSense device
+working. Most of our documentation currently resides on the Github wiki, which is a good
+place to contribute.
 
 Standards
 ---------
