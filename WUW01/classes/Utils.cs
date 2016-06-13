@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 namespace WUW01
 {
-	public class Utils
+		public class Utils
     {
         #region Constants
 
@@ -15,34 +15,34 @@ namespace WUW01
         #region Lengths and Rects
 
         public static RectangleR FindBox(ArrayList points)
-	{
-		double minX = double.MaxValue;
-		double maxX = double.MinValue;
-		double minY = double.MaxValue;
-		double maxY = double.MinValue;
-		
-		foreach (PointR p in points)
-		{
-			if (p.X < minX)
-				minX = p.X;
-			if (p.X > maxX)
-				maxX = p.X;
-				
-			if (p.Y < minY)
-				minY = p.Y;
-		
-			if (p.Y > maxY)
-				maxY = p.Y;
-		}
-		
-		return new RectangleR(minX, minY, maxX - minX, maxY - minY);
-	}
+				{
+					double minX = double.MaxValue;
+					double maxX = double.MinValue;
+					double minY = double.MaxValue;
+					double maxY = double.MinValue;
 
-	public static double Distance(PointR p1, PointR p2)
-	{
-		double dx = p2.X - p1.X;
-		double dy = p2.Y - p1.Y;
-		return Math.Sqrt(dx * dx + dy * dy);
+					foreach (PointR p in points)
+					{
+						if (p.X < minX)
+							minX = p.X;
+						if (p.X > maxX)
+							maxX = p.X;
+
+						if (p.Y < minY)
+							minY = p.Y;
+
+						if (p.Y > maxY)
+							maxY = p.Y;
+					}
+
+					return new RectangleR(minX, minY, maxX - minX, maxY - minY);
+				}
+
+				public static double Distance(PointR p1, PointR p2)
+				{
+					double dx = p2.X - p1.X;
+					double dy = p2.Y - p1.Y;
+					return Math.Sqrt(dx * dx + dy * dy);
         }
 
         // compute the centroid of the points given
@@ -73,8 +73,8 @@ namespace WUW01
 
         #region Angles and Rotations
 
-        // determines the angle, in degrees, between two points. the angle is defined 
-        // by the circle centered on the start point with a radius to the end point, 
+        // determines the angle, in degrees, between two points. the angle is defined
+        // by the circle centered on the start point with a radius to the end point,
         // where 0 degrees is straight right from start (+x-axis) and 90 degrees is
         // straight down (+y-axis).
         public static double AngleInDegrees(PointR start, PointR end, bool positiveOnly)
@@ -83,12 +83,12 @@ namespace WUW01
             return Rad2Deg(radians);
         }
 
-        // determines the angle, in radians, between two points. the angle is defined 
-        // by the circle centered on the start point with a radius to the end point, 
+        // determines the angle, in radians, between two points. the angle is defined
+        // by the circle centered on the start point with a radius to the end point,
         // where 0 radians is straight right from start (+x-axis) and PI/2 radians is
         // straight down (+y-axis).
-	public static double AngleInRadians(PointR start, PointR end, bool positiveOnly)
-	{
+				public static double AngleInRadians(PointR start, PointR end, bool positiveOnly)
+				{
             double radians = 0.0;
             if (start.X != end.X)
             {
@@ -106,16 +106,16 @@ namespace WUW01
                 radians += Math.PI * 2.0;
             }
             return radians;
-	}
+				}
 
         public static double Rad2Deg(double rad)
-	{
-		return (rad * 180d / Math.PI);
-	}
+				{
+					return (rad * 180d / Math.PI);
+				}
 
-	public static double Deg2Rad(double deg)
-	{
-			return (deg * Math.PI / 180d);
+				public static double Deg2Rad(double deg)
+				{
+					return (deg * Math.PI / 180d);
         }
 
         // rotate the points by the given degrees about their centroid
@@ -147,7 +147,7 @@ namespace WUW01
                 PointR q = PointR.Empty;
                 q.X = dx * cos - dy * sin + cx;
                 q.Y = dx * sin + dy * cos + cy;
-                
+
                 newPoints.Add(q);
             }
             return newPoints;
@@ -161,7 +161,7 @@ namespace WUW01
         //
         // Note that the C# Math coordinate system has +x-axis stright right and
         // +y-axis straight down. Rotation is clockwise such that from +x-axis to
-        // +y-axis is +90 degrees, from +x-axis to -x-axis is +180 degrees, and 
+        // +y-axis is +90 degrees, from +x-axis to -x-axis is +180 degrees, and
         // from +x-axis to -y-axis is -90 degrees.
         public static PointR RotatePoint(PointR p, PointR c, double radians)
         {
@@ -223,7 +223,7 @@ namespace WUW01
 
         #region Scaling
 
-        // scales the points so that they form the size given. does not restore the 
+        // scales the points so that they form the size given. does not restore the
         // origin of the box.
         public static ArrayList ScaleTo(ArrayList points, SizeR sz)
         {
@@ -336,7 +336,7 @@ namespace WUW01
         // computes the 'distance' between two point paths by summing their corresponding point distances.
         // assumes that each path has been resampled to the same number of points at the same distance apart.
         public static double PathDistance(ArrayList path1, ArrayList path2)
-        {            
+        {
             double distance = 0;
             for (int i = 0; i < path1.Count; i++)
             {
