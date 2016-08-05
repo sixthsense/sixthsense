@@ -2461,7 +2461,7 @@ namespace WUW01
             if (globeDemo == false)
             {
                 StopOtherApps(this, e);
-                GlobeDemo_Flash.LoadMovie(0, "http://localhost/SWF/dof05reverse.swf");
+                GlobeDemo_Flash.LoadMovie(0, "http://mrdoob.com/lab/actionscript/pv3d/dof/05/dof05.swf");
                 globeDemo = true;
                 labelDemoName.Text = "Globe";
                 buttonGlobeDemo.Text = "Stop Globe";
@@ -2605,7 +2605,7 @@ namespace WUW01
             if (effectsDemo == false)
             {
                 StopOtherApps(this, e);                
-                EffectsDemo_Flash.LoadMovie(0, "http://localhost/SWF/neave_imagination.swf");
+                EffectsDemo_Flash.LoadMovie(0, "http://files6.fliiby.com/flash/27ufm3k8q3.swf");
                 effectsDemo = true;
                 labelDemoName.Text = "Effects";
                 buttonEffectsDemo.Text = "Stop Effects";
